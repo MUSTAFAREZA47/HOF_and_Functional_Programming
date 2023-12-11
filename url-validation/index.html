@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>URL Validation</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .input-field {
+      margin-bottom: 20px;
+    }
+    .output {
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body class="bg-gray-200">
+  <div class="container py-10">
+    <h1 class="text-4xl mb-6 text-center font-semibold">URL Validation</h1>
+    <div class="input-field">
+      <label for="url" class="block mb-2">Enter URL:</label>
+      <input id="url" class="w-full px-3 py-2 border rounded" type="text" placeholder="Enter URL">
+    </div>
+    <button id="validateBtn" class="bg-blue-500 text-white px-4 py-2 rounded">Validate URL</button>
+    <div id="output" class="output mt-4 bg-yellow-300 w-auto pl-5 rounded"></div>
+    <p class="mt-6 text-slate font-light">The valid URLs should start with either http:// or https://, followed by one or more letters, digits, or special characters, followed by a dot, and then followed by one or more letters.</p>
+  </div>
+
+  <script src="script.js"></script> 
+</body>
+</html>

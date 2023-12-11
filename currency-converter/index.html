@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Currency Converter</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .input-field {
+      margin-bottom: 20px;
+    }
+    .output {
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body class="bg-gray-200">
+  <div class="container py-10">
+    <h1 class="text-4xl mb-6 text-center font-semibold">Currency Converter</h1>
+    <div class="input-field">
+      <label for="items" class="block mb-2">Enter items and their prices in USD:</label>
+      <textarea id="items" class="w-full px-3 py-2 border rounded" rows="4" placeholder="Example: Item 1: 20, Item 2: 35"></textarea>
+    </div>
+    <button id="convertBtn" class="bg-blue-500 text-white px-4 py-2 rounded">Convert to INR</button>
+    <div id="output" class="output mt-4"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
